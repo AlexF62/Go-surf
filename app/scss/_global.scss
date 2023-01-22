@@ -1,32 +1,37 @@
 @import 'vars.scss';
 
-html,
 body {
-    height: 100%;
-}
-
-
-
-body {
-    color: #8d8d8d;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 26px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
 }
 
-.main {
-    flex-grow: 1;
+.subtitle-left {
+   font-style: normal;
+font-size: 22px;
+line-height: 32px;
+letter-spacing: 7.33333px;
+text-transform: uppercase;
+padding-left: 103px;
+position: relative;
+color: #FFFFFF;
+display: inline-block;
+&::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    left: 0;
+    top: 50%;
+}
+
+opacity: 0.5;
 }
 
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
+
 
 
 
